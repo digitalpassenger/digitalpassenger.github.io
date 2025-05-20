@@ -173,17 +173,24 @@
   
   figure {
     margin: 0; }
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('/assets/BarlowGX.ttf') format('truetype');
+}  
   
   /* Scaffolding
     =============== */
   html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font: normal normal normal 1rem/1.6 Barlow, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 1rem; }
+    font: normal normal normal 1rem/1.6 Barlow, Helvetica Neue, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+  }
   
   body {
-    color: #404040;
+    color: #13151a;
     background: #ffffff;
     font-size: 1.1rem; }
   
@@ -208,12 +215,13 @@
     margin: 1.5rem 0;
     font-weight: 700;
     line-height: 1.2;
-    color: #404040; }
-    h1:not(:first-child),
-    h2:not(:first-child),
-    h3:not(:first-child),
-    h4:not(:first-child),
-    h5:not(:first-child) {
+    color: #13151a; }
+  
+  h1:not(:first-child),
+  h2:not(:first-child),
+  h3:not(:first-child),
+  h4:not(:first-child),
+  h5:not(:first-child) {
       margin: 1.5rem 0; }
   
   h1:not(:first-child),
@@ -254,7 +262,7 @@
   
   a {
     color: #0366EE;
-    text-decoration: none; }
+    text-decoration: underline; }
     a:hover, a:active, a:focus {
       color: #0246a2;
       text-decoration: underline; }
@@ -277,6 +285,7 @@
 body {
     padding: 1rem 2rem;
     display: flex;
+    max-width: 44rem;
 }
 .main {
     
