@@ -176,7 +176,7 @@
 
 @font-face {
   font-family: 'Barlow';
-  src: url('/assets/BarlowGX.ttf') format('truetype');
+  src: url('./Barlow-Regular.ttf') format('truetype');
 }  
   
   /* Scaffolding
@@ -184,15 +184,13 @@
   html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font: normal normal normal 1rem/1.6 Barlow, Helvetica Neue, Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
+    font: normal normal normal 1.1rem/1.6 Barlow, Helvetica Neue, Arial, sans-serif;
   }
   
   body {
     color: #13151a;
     background: #ffffff;
-    font-size: 1.1rem; }
+    font-size: 1.125rem; }
   
   p,
   ol,
@@ -212,22 +210,12 @@
   h3,
   h4,
   h5 {
-    margin: 1.5rem 0;
+    margin: 0 0 1.5rem 0;
     font-weight: 700;
     line-height: 1.2;
-    color: #13151a; }
-  
-  h1:not(:first-child),
-  h2:not(:first-child),
-  h3:not(:first-child),
-  h4:not(:first-child),
-  h5:not(:first-child) {
-      margin: 1.5rem 0; }
-  
-  h1:not(:first-child),
-  h2:not(:first-child),
-  h3:not(:first-child) {
-    margin-top: 2rem; }
+    color: #13151a;
+  }
+
   
   h1 {
     font-size: 1.75rem; }
@@ -245,20 +233,18 @@
     font-size: 1rem; }
   
   @media (min-width: 600px) {
-    h1:not(:first-child),
-    h2:not(:first-child),
-    h3:not(:first-child) {
-      margin-top: 2.5rem; }
+
     h1 {
-      font-size: 2.25rem; }
-    h2 {
       font-size: 2rem; }
+    h2 {
+      font-size: 1.75rem; }
     h3 {
       font-size: 1.75rem; }
     h4 {
       font-size: 1.5rem; }
     h5 {
-      font-size: 1.25rem; } }
+      font-size: 1.25rem; }
+  }
   
   a {
     color: #0366EE;
@@ -287,6 +273,17 @@ body {
     display: flex;
     max-width: 44rem;
 }
-.main {
-    
+
+p {
+  text-wrap: pretty;
+}
+
+.alert {
+  padding: 0.2rem 0.5rem 0.4rem;
+  display: inline-flex;
+}
+
+.alert--dark {
+  background: #13151a;
+  color: white;
 }
